@@ -75,7 +75,7 @@ const Navbar = () => {
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
-            window.scrollTo(0, 1100);
+            window.scrollTo(0, 1250);
           }}
           ><li>{t("work")}</li></Link>
           <Link
@@ -83,7 +83,7 @@ const Navbar = () => {
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
-            window.scrollTo(0, 3000);
+            window.scrollTo(0, 3400);
           }}
           ><li>{t("downloadCv")}</li></Link>
           <Link
