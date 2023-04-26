@@ -4,7 +4,7 @@ import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } fr
 
 const App = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<Navbar />}>
     <BrowserRouter>
     <div className="relative z-0 bg-primary">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
