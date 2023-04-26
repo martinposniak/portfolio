@@ -119,6 +119,52 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
+             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+          <Link
+          to='/'
+          className='flex items-center gap-2'
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 600);
+          }}
+          >
+          <li>{t("about")}</li>
+          </Link>
+          <Link
+          to='/'
+          className='flex items-center gap-2'
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 1250);
+          }}
+          ><li>{t("work")}</li></Link>
+          <Link
+          to='/'
+          className='flex items-center gap-2'
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 5100);
+          }}
+          ><li>{t("downloadCv")}</li></Link>
+          <Link
+          to='/'
+          className='flex items-center gap-2'
+          onClick={() => {
+            setActive("");
+            window.scrollTo(0, 5750);
+          }}
+          ><li>{t("contact")}</li></Link>
+          <li>
+          <select
+          value={localStorage.getItem("i18nextLng")}
+          onChange={handleLanguageChange}
+          >
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+              </select>
+          </li>
+        </ul>
           </div>
         </div>
       </div>
